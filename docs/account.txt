@@ -1,0 +1,7 @@
+Super Admin Account:
+email: super@admin.com
+password: Qwebnm123
+
+Member Test:
+email: member@gmail.com
+password: qwebnm123
