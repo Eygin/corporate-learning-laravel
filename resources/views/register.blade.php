@@ -20,7 +20,7 @@
         
         <!-- Custom Fonts -->
         <link href="{{URL('assets/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
-        <link rel="icon" type="image/x-icon" href="{{URL('assets/img/telkom.png')}}">
+        <link rel="icon" type="image/x-icon" href="{{URL('assets/img/digiup.png')}}">
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>

@@ -30,7 +30,7 @@
 
         <!-- Custom Fonts -->
         <link href="{{ URL('assets/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
-        <link rel="icon" type="image/x-icon" href="{{URL('assets/img/telkom.png')}}">
+        <link rel="icon" type="image/x-icon" href="{{URL('assets/img/digiup.png')}}">
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -45,7 +45,7 @@
             <!-- Navigation -->
             <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="{{ URL('') }}"><img src="{{URL('assets/img/telkom.png')}}" alt="" width="100"></a>
+                    <a class="navbar-brand" href="{{ URL('') }}"><img src="{{URL('assets/img/digiup.png')}}" alt="" width="70"></a>
                 </div>
 
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">

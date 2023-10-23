@@ -1,4 +1,19 @@
 </div>
+<style>
+    .footer {
+        position: relative;
+        margin-top: -69px;
+        left: 0px;
+        width: 100%;
+        background-color: #f8f8f8;
+        color: white;
+        text-align: right;
+    }
+</style>
+<div class="footer">
+    <img src="{{ URL('assets/img/telkom.png') }}" alt="" width="120">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="{{ URL('assets/img/pijar.png') }}" alt="" width="120">
+</div>
 <!-- /#wrapper -->
 
 <!-- jQuery -->

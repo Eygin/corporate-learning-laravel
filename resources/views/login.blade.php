@@ -21,7 +21,7 @@
 
         <!-- Custom Fonts -->
         <link href="{{URL('assets/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
-        <link rel="icon" type="image/x-icon" href="{{URL('assets/img/telkom.png')}}">
+        <link rel="icon" type="image/x-icon" href="{{URL('assets/img/digiup.png')}}">
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -34,6 +34,11 @@
 
         <div class="container">
             <div class="row">
+                <div class="" style="margin-left: 45%;
+                margin-bottom: -70px;
+                margin-top: 100px;">
+                    <img src="{{ URL('assets/img/digiup.png') }}" alt="" width="100">
+                </div>
                 <div class="col-md-4 col-md-offset-4">
                     <div class="login-panel panel panel-default">
                         <div class="panel-heading">
@@ -64,6 +69,12 @@
                             </form>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div style="margin-left: 38%;margin-top:0%;">
+                    <img src="{{ URL('assets/img/telkom.png') }}" alt="" width="120">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img src="{{ URL('assets/img/pijar.png') }}" alt="" width="120">
                 </div>
             </div>
         </div>
