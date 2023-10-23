@@ -50,9 +50,11 @@
                                                 <td>{{ date('d M Y', strtotime($pdf->created_at)) }}</td>
                                                 <td>
                                                     <div class="btn-group">
-                                                        <a href="" class="btn btn-primary btn-sm"><i class="fa fa-eye"></i></a>
-                                                        <a href="{{ URL('materi/'.$pdf->materi_id.'/edit') }}" class="btn btn-warning btn-sm"><i class="fa fa-pencil"></i></a>
-                                                        <a href="{{ URL('materi/'.$pdf->materi_id.'/delete') }}" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></a>
+                                                        <a href="{{ URL('materi/'.$pdf->materi_id.'/show') }}" class="btn btn-primary btn-sm"><i class="fa fa-eye"></i></a>
+                                                        @role('super admin')
+                                                            <a href="{{ URL('materi/'.$pdf->materi_id.'/edit') }}" class="btn btn-warning btn-sm"><i class="fa fa-pencil"></i></a>
+                                                            <a href="{{ URL('materi/'.$pdf->materi_id.'/delete') }}" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></a>
+                                                        @endrole
                                                     </div>
                                                 </td>
                                             </tr>

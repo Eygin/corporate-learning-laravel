@@ -72,9 +72,16 @@ class materiController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($uuid)
     {
-        //
+        $materi = Materi::where('materi_id', $uuid)->first();
+        if (is_null($materi)) {
+            session()->flash('error', 'Data Materi tidak ditemukan');
+            return redirect(URL('/materi'));
+        }
+
+        $category = Category::get();
+        return view('detail_materi', compact('materi', 'category'));
     }
 
     /**

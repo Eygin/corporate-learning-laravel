@@ -44,6 +44,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/materi/add', [materiController::class, 'create']);
     Route::post('/materi/store', [materiController::class, 'store']);
     Route::get('/materi/{uuid?}/edit', [materiController::class, 'edit']);
+    Route::get('/materi/{uuid?}/show', [materiController::class, 'show']);
     Route::put('/materi/{uuid?}', [materiController::class, 'update']);
     Route::get('/materi/file/{uuid?}/delete', [materiController::class, 'deleteMateri']);
     Route::get('/materi/show-pdf/{uuid}', function($uuid) {
