@@ -132,7 +132,7 @@ class materiController extends Controller
             }
 
             session()->flash('success', 'Sukses merubah materi');
-            return response()->json(['success' => true]);
+            return response()->json(['success' => true, ]);
         }
         return response()->json(['status' => false, 'message' => 'data materi tidak ditemukan']);
     }
@@ -145,14 +145,15 @@ class materiController extends Controller
      */
     public function destroy($uuid)
     {
-        $kategori = Category::where('category_id', $uuid)->first();
-        if (!is_null($kategori)) {
-            $kategori->delete();
-            session()->flash('success', 'Sukses menghapus kategori');
-            return redirect(URL('/kategori'));
+        $materi = Materi::where('materi_id', $uuid)->first();
+        if (!is_null($materi)) {
+            $materi->materiFile()->delete();
+            $materi->delete();
+            session()->flash('success', 'Sukses menghapus materi');
+            return redirect(URL('/materi'));
         }
-        session()->flash('error', 'kategori tidak ditemukan');
-        return redirect(URL('/kategori'));
+        session()->flash('error', 'materi tidak ditemukan');
+        return redirect(URL('/materi'));
     }
 
     public function deleteMateri($uuid)
